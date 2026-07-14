@@ -1,0 +1,19 @@
+{
+  "day": 2,
+  "student_name": "Yatindra Rai",
+  "github": "YatindraRai002",
+  "lab1_scenario": "C",
+  "lab1_prompt": "Role: Corporate IT Onboarding Assistant Bot.\n\nGoal: Provide a clear, reassuring, and informative answer to a new campus recruit asking about when and how they will receive their company laptop.\n\nContext: The user is a fresh college graduate starting their professional career. They are excited but likely unfamiliar with corporate IT logistics. Laptop delivery depends on whether they are remote or in-office.\n\nConstraints: Keep the response under 150 words. Provide clear, actionable next steps. Do not use overly casual slang (e.g., \"Hey kiddo,\" \"No worries\"), but avoid sounding cold or overly robotic.\n\nStyle / Tone: Welcoming, helpful, professional, and structured.\n\nOutput Format: A polished, ready-to-send chatbot message using clean markdown (bullet points and bold text) for easy scanning.",
+  "lab1_output_met_constraints": true,
+  "lab1_extra_scenarios_done": 2,
+  "lab2_problem": "Galaxy Buds distribution centre — shipment/hold/restock",
+  "lab2_naive_output_summary": "```python\nstart = 4200\nsent = 850\nremaining = start - sent\nhold_back = int(remaining * 0.06) # Assuming standard inventory holding or if it's exact float\n# Let's check both exact math and integer math\nrestock = 1150\n\n# If \"holds 6% of remaining stock\" means those are set aside and NOT available for sale by EOD:\navailable_exact = remaining - (remaining * 0.06) + restock\nprint(f\"Exact: {available_exact}\")\n\n\n```\n\n```text\nExact: 4299.0\n\n\n```\n\nBased on the inventory numbers provided, here is the step-by-step breakdown to find the total units available for sale by the end of the day:\n\n* **Starting Inventory:** 4,200 units\n* **Units Sent Out:** -850 units\n* **Remaining Stock:** 3,350 units ($4,200 - 850$)\n* **Held Stock (6%):** -201 units ($3,350 \\times 0.06$, which are set aside and not available for sale)\n* **Restock:** +1,150 units\n\n### Final Calculation\n\n$$\\text{Available Units} = (3,350 - 201) + 1,150 = 4,299$$\n\nThere are **4,299** Galaxy Buds units available for sale by the end of the day.",
+  "lab2_cot_prompt": "A warehouse starts the day with an inventory of 4,200 Galaxy Buds. During the day, they ship out 850 units. From the stock that remains after that shipment, they hold back 6% in reserve. Finally, they receive a afternoon restock of 1,150 units. \n\nHow many Galaxy Buds are available for sale by the end of the day? \n\nWork through this one step at a time: first compute the shipment, then the hold, then the restock. Show each step, then state the final answer.",
+  "lab2_cot_output_summary": "The AI correctly broke down the math: 4,200 minus 850 leaves 3,350; subtracting a 6% hold (201 units) leaves 3,149; and adding the 1,150 restock gives a final correct answer of 4,299 available units.",
+  "better_approach": "cot",
+  "stretch_done": true,
+  "stretch_react_prompt": "A logistics warehouse begins the day with a starting inventory of 4,200 Galaxy Buds. During the morning shift, 850 of these units are shipped out to fill existing orders. From the stock that remains after those shipments, the warehouse manager decides to hold back 6% to keep in reserve. Just before closing, a delivery truck arrives and replenishes the inventory with a restock of 1,150 units. \n\nCalculate the total units left available for sale by the end of the day. For this task, do not guess the arithmetic. Instead, write out a \"Thought\" explaining what calculation needs to be done, explicitly call out an \"Action\" where you would use a calculator tool to perform the exact math, and then state the final calculated result.",
+  "tasks_completed": 6,
+  "tasks_total": 6,
+  "submitted_at": "2026-07-14T09:43:53.134Z"
+}
