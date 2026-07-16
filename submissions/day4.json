@@ -1,0 +1,52 @@
+{
+  "day": 4,
+  "student_name": "Yatindra Rai",
+  "github": "YatindraRai002",
+  "incidents": [
+    {
+      "id": "A",
+      "failure_type": "Hallucination",
+      "principle": "Reliability",
+      "justification": "The chatbot failed to operate accurately within its factual boundaries, fabricating a non-existent policy with high confidence and compromising the dependability of the company's customer service system."
+    },
+    {
+      "id": "B",
+      "failure_type": "Privacy Violation",
+      "principle": "Privacy",
+      "justification": "The system covertly logged employee messages and unredacted client contract terms without user consent or notification, directly failing to protect sensitive and confidential data."
+    },
+    {
+      "id": "C",
+      "failure_type": "Deepfake/Misinformation",
+      "principle": "Transparency",
+      "justification": "The dissemination of a highly realistic, synthetic video without any watermarks or clear disclosure completely bypassed transparency standards, directly deceiving the public and manipulating financial markets."
+    },
+    {
+      "id": "D",
+      "failure_type": "Bias/Discrimination",
+      "principle": "Fairness",
+      "justification": "The model learned a proxy variable for gender (women’s colleges) from its training data, resulting in systemic inequity and the automated penalization of female candidates."
+    },
+    {
+      "id": "E",
+      "failure_type": "Lack of Human Oversight",
+      "principle": "Human Oversight",
+      "justification": "The automated system was left to enforce policies entirely unchecked, lacking the essential \"human in the loop\" required to catch, audit, and correct its disproportionate impact."
+    },
+    {
+      "id": "F",
+      "failure_type": "Deepfake/Misinformation",
+      "principle": "Security",
+      "justification": "Malicious actors weaponized highly convincing synthetic audio to bypass verification protocols and manipulate employees, directly compromising the organization's financial defense layers."
+    }
+  ],
+  "justifications_written": 6,
+  "stretch_done": true,
+  "stretch_company": "Samsung (Internal employee use of public ChatGPT, April 2023)",
+  "stretch_failure_type": "Privacy Violation",
+  "stretch_principle": "Privacy",
+  "stretch_notes": "Engineers unknowingly leaked highly confidential corporate data—including proprietary source code and internal meeting notes—by pasting them into a public generative AI model to check for errors. This incident perfectly highlights the severe data exposure risks of using unvetted consumer AI tools within a corporate environment.",
+  "tasks_completed": 6,
+  "tasks_total": 6,
+  "submitted_at": "2026-07-16T06:18:10.221Z"
+}
